@@ -16,6 +16,7 @@ AUTHORIZED = {
     "admin@example.com",
     # agrega los correos/dispositivos que pueden registrar escaneos
 }
+print("SECRET_KEY:", SECRET_KEY)
 
 app = Flask(__name__)
 
