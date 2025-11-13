@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flask: bingo_server",
+      "type": "python",
+      "request": "launch",
+      "program": "bingo_server.py",
+      "console": "integratedTerminal",
+      "env": {
+        "FLASK_APP": "bingo_server.py",
+        "FLASK_ENV": "development"
+      },
+      "args": []
+    }
+  ]
+}
