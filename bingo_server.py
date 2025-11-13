@@ -4,11 +4,13 @@ from datetime import datetime
 import psycopg2
 from datetime import datetime
 import pandas as pd
+from flask_cors import CORS
 DB_URL = "postgresql://bingo_user:NGMW9BINy2WxDhFBU59LJtxcETdgdZOx@dpg-d4aktc24d50c73cmmefg-a/bingo_9ys8"
 
 
 
 app = Flask(__name__)
+CORS(app)  # <--- esto permite que el frontend haga fetch desde cualquier origen
 
 def init_db():
     conn = get_connection()
