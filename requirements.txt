@@ -3,3 +3,4 @@ qrcode
 pillow
 pandas
 openpyxl
+psycopg2
