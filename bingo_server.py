@@ -118,7 +118,9 @@ def delete_all_scans():
     cur.close()
     conn.close()
     return jsonify({"ok": True, "message": "Todos los registros de scans han sido borrados"})
-
+@app.route("/ping")
+def ping():
+    return {"ok": True, "message": "pong"}
 if __name__ == "__main__":
     init_db()
     app.run(host="0.0.0.0", port=5000, debug=True)
